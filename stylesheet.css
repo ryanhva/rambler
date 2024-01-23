@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+}
+
+.header img {
+    width: 375px;
+    height: auto;
+}
+.background{
+    background-image: url(Images/background4.png);
+   height: 100vh;
+   background-position: center;
+}
+.button_container {
+    text-align: center;
+    transform: translateY(750%);
+}
+
+.button_container a{
+    text-decoration: none;
+    color: #605558;
+}
+.button{
+    font-size: 40px;
+    background-color: #242021;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    color: white;
+}
+
+
+#about, #my_thoughts, #location, #how_to_be_green{
+    height: 100em;
+}
+
+#about{
+    background-color: red
+}
+#about a, #location a, #how_to_be_green a{
+    color: white;
+    text-decoration: none;
+}
+
+#location{
+    background-color: green
+}
+#how_to_be_green{
+    background-color: blue
+}
+
+
+.sticky{
+    position: fixed;
+    top: 613px;
+    left: 330px;
+    background-color: yellow;
+    padding: 10px;
+
+}
+
+p {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Place the navbar at the bottom of the page, and make it stick */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
