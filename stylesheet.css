@@ -44,6 +44,8 @@ body{
 #about{
     background-color: red
 }
+
+
 #about a, #location a, #how_to_be_green a{
     color: white;
     text-decoration: none;
@@ -57,12 +59,13 @@ body{
 }
 
 
-.sticky{
+.up_button{
     position: fixed;
-    top: 613px;
+    top: 619px;
     left: 330px;
     background-color: yellow;
-    padding: 10px;
+    padding: 8px;
+    scroll-behavior: smooth;
 
 }
 
@@ -91,3 +94,47 @@ p {
     font-size: 17px;
   }
   
+
+.slider_container{
+    padding: 1em;
+}
+
+.slider_wrapper{
+    position: relative;
+    max-width: 48em;
+    margin: 0 auto;
+}
+
+.slider{
+   display: flex; 
+   aspect-ratio: 18/10;   
+   overflow-x: auto;
+   scroll-snap-type: x mandatory;
+   scroll-behavior: smooth;
+   border-radius: 10px;
+}
+
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider_nav{
+    display: flex;
+    column-gap: 2em;
+    position: absolute;
+    bottom: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    top: 11em;
+}
+
+.slider_nav a{
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+}
