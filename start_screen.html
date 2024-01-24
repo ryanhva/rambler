@@ -1,65 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2ndlife</title>
     <link rel="stylesheet" href="stylesheet.css">
 </head>
+
 <body>
     <header class="header">
         <!--naam, logo, nav-->
-<img src="Images/header.jpg" alt="store front Rambler">
+        <img src="Images/header.jpg" alt="store front Rambler">
     </header>
-    
+
     <main>
 
-    <!--about, my sotyr, location, how to be green,-->
-    <section id="about">
-    <h2>About</h2>
-    <p>"Rambler Studios"</p>
-    <p>A space where young and talented individuals explore their creativity, personal exploration and develop their own set of skills. Rambler Studios, is a platform where individuals can desighn their own sustainable path in life.</p>
-    <div class="slider_container">
-        <div class="slider_wrapper">
-            <div class="slider">
-                <img id="slide_1" src="Images/slide1.jpg" alt="rambler studion logo">
-                <img id="slide_2" src="Images/slide2.jpg" alt="rambler studio atelier">
-                <img id="slide_3" src="Images/slide3.jpg" alt="rambler studio clothing">
-            </div>
-            <div class="slider_nav">
-                <a href="#slide_1"></a>
-                <a href="#slide_2"></a>
-                <a href="#slide_3"></a>
-            </div>
-        </div>
-    </div>
-    <p> </p>
-    </section>
-    
-    
-    <section id="location">
-    <h2>Location</h2>
-    </section>
-    
-    <section id="how_to_be_green">
-    <h2>How to be green</h2>
+        <!--about, my sotyr, location, how to be green,-->
+        <section id="about">
+            <h2>About</h2>
+            <nav role="navigation">
+                <div id="menutoggle">
+                    <input type="checkbox"/>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <a href="#about"><li>About</li></a>
+                        <a href="#clothes"><li>Clothes</li></a>
+                        <a href="#location"><li>Location</li></a>
+                        <a href="#how_to_be_green"><li>How to be green</li></a>
+                    </ul>
+                </div>
+            </nav>
 
-    </section>
+            <p>"Rambler Studios"</p>
+            <p>A space where young and talented individuals explore their creativity, personal exploration and develop
+                their own set of skills. Rambler Studios, is a platform where individuals can desighn their own
+                sustainable path in life.</p>
+            <div class="slider_container">
+                <div class="slider_wrapper">
+                    <div class="slider">
+                        <img id="slide_1" src="Images/slide1.jpg" alt="rambler studion logo">
+                        <img id="slide_2" src="Images/slide2.jpg" alt="rambler studio atelier">
+                        <img id="slide_3" src="Images/slide3.jpg" alt="rambler studio clothing">
+                    </div>
+                    <div class="slider_nav">
+                        <a href="#slide_1"></a>
+                        <a href="#slide_2"></a>
+                        <a href="#slide_3"></a>
+                    </div>
+                </div>
+            </div>
+            <p>Rambler founded in 2007 by Carmen van der Vecht, inspired by the unique outfits worn by the people living
+                on the streets in cities like London, Sao Paulo, and Amsterdam. Their unique outfits, worn not just as
+                clothes, but as a powerful expression of creativity and identity. Feeling a deep sense of inspiration,
+                Rambler was founded, to showcase these incredible street styles to the world.</p>
+            <div class="container_zeedijk">
+                <img class="image_zeedijk" src="Images/zeedijk.jpg" alt="picture of the street zeedijk">
+                <div class="text_zeedijk">
+                    <p>Fast forward to Rambler Studios Amsterdam, the first creative Rambler Studio, nestled in the
+                        heart of Zeedijk. Rambler Studio is not just an ordinary studio, it's a place where youngsters
+                        (Ramblers) dive into the world of self-expression. Here, they learn to express their creativity,
+                        build essential skills, and shape their lives through the canvas of street fashion.</p>
+                </div>
+            </div>
+            <div class="container_comunity">
+                <div class="text_comunity">
+                    <p>Guiding this creative journey is a team of dedicated Rambler coaches. Their mission? To assist
+                        these young Ramblers in designing their path through life. The studio becomes a place of growth,
+                        empowerment, and a community where individuals can find inspiration, collaborate with
+                        like-minded peers, and bring their visions to life.</p>
+                </div>
+                <img class="image_comunity" src="Images/comunity.jpg" alt="picture of the ramblers working">
+            </div>
+        </section>
+
+        <section id="clothes">
+            <h2>Clothes</h2>
+        </section>
+
+        <section id="location">
+            <h2>Location</h2>
+        </section>
+
+        <section id="how_to_be_green">
+            <h2>How to be green</h2>
+        </section>
+
+        <a href="start_screen.html">
+        <img src="Images/arrow.png" class="sticky-image" height="50px" width="50 px">
+        </a>
+
 
 
     </main>
     <footer>
-    <div class="navbar">
-        <a href="#about">About</a>
-        <a href="#location">Location</a>
-        <a href="#how_to_be_green">How to be green</a>
-    </div>
-    <div class="up_button">
-        <a href="start_screen.html">
-        <img src="Images/arrow.png" alt="arrow" height="30" width="30">
-        </a>
+    <!--
+        <div class="navbar">
+            <a href="#about">About</a>
+            <a href="#clothes"></a>Clothes</a>
+            <a href="#location">Location</a>
+            <a href="#how_to_be_green">How to be green</a>
         </div>
+    -->
+
     </footer>
 </body>
-</html>
 
+</html>

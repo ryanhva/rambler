@@ -1,126 +1,93 @@
-*{
+* {
     margin: 0;
+    padding: 0;
 }
 
-.header img {
-    width: 375px;
-    height: auto;
-}
-.background{
+/*enter screen*/
+.background {
     background-image: url(Images/background4.png);
-   height: 100vh;
-   background-position: center;
+    height: 100vh;
+    background-position: center;
 }
+
 .button_container {
     text-align: center;
     transform: translateY(750%);
 }
 
-.button_container a{
+.button_container a {
     text-decoration: none;
     color: #605558;
 }
-.button{
+
+.button {
     font-size: 40px;
     background-color: #242021;
     outline: none;
     border: none;
     border-radius: 20px;
-    
+
 }
 
-html{
+/*head*/
+.header img {
+    vertical-align: middle;
+    width: 375px;
+    height: 230px;
+}
+
+/*body*/
+h2 {
+    text-align: center;
+}
+
+
+html {
     scroll-behavior: smooth;
 }
-body{
+
+body {
     color: white;
 }
 
-
-#about, #my_thoughts, #location, #how_to_be_green{
+#about,
+#my_thoughts,
+#location,
+#how_to_be_green,
+#clothes {
     height: 100em;
 }
 
-#about{
+#about {
     background-color: red
 }
-
-
-#about a, #location a, #how_to_be_green a{
-    color: white;
-    text-decoration: none;
-}
-
-#location{
-    background-color: green
-}
-#how_to_be_green{
-    background-color: blue
-}
-
-
-.up_button{
-    position: fixed;
-    top: 619px;
-    left: 330px;
-    background-color: yellow;
-    padding: 8px;
-    scroll-behavior: smooth;
-
-}
-
-p {
-    text-align: center;
-    margin: 20px;
-}
-
-/* Place the navbar at the bottom of the page, and make it stick */
-.navbar {
-    background-color: #333;
-    overflow: hidden;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-
-.slider_container{
+/* picture slider code from https://www.youtube.com/watch?v=McPdzhLRzCg&t=303s*/
+.slider_container {
     padding: 1em;
 }
 
-.slider_wrapper{
+.slider_wrapper {
     position: relative;
     max-width: 48em;
     margin: 0 auto;
 }
 
-.slider{
-   display: flex; 
-   aspect-ratio: 18/10;   
-   overflow-x: auto;
-   scroll-snap-type: x mandatory;
-   scroll-behavior: smooth;
-   border-radius: 10px;
+.slider {
+    display: flex;
+    aspect-ratio: 18/10;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 10px;
 }
 
-.slider img{
+.slider img {
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
 }
 
-.slider_nav{
+.slider_nav {
     display: flex;
     column-gap: 2em;
     position: absolute;
@@ -131,10 +98,192 @@ p {
     top: 11em;
 }
 
-.slider_nav a{
+.slider_nav a {
     width: 0.5em;
     height: 0.5em;
     border-radius: 50%;
     background-color: #fff;
     opacity: 0.75;
+}
+
+.container_comunity,
+.container_zeedijk {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text_comunity,
+.text_zeedijk {
+    width: 70%;
+
+}
+
+.image_comunity {
+    max-width: 100%;
+    width: 180px;
+    height: 20em;
+    padding-right: 1em;
+}
+
+.image_zeedijk {
+    max-width: 100%;
+    width: 163px;
+    height: 19em;
+    padding-left: 1em;
+}
+/*clothess*/
+#clothes{
+    background-color: purple;
+}
+
+#about a,
+#location a,
+#how_to_be_green a,
+#clothes a {
+    color: white;
+    text-decoration: none;
+}
+
+#location {
+    background-color: green
+}
+
+#how_to_be_green {
+    background-color: blue
+}
+
+
+p {
+    text-align: center;
+    margin: 1em;
+}
+
+/*
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+*/
+
+#menutoggle{
+    display: block;
+    position: relative;
+    /*position checkbox*/
+    top: 10px;
+    left: 16px;
+
+    z-index: 1;
+
+    -webkit-user-select:none;
+    user-select: none;  
+}
+
+#menutoggle a {
+    text-decoration: none;
+    color: #232323;
+}
+
+#menutoggle input {
+    display: block;
+    width: 42px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    opacity: 0;
+    z-index: 2;
+
+    -webkit-touch-callout: none;
+}
+
+#menutoggle span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    
+    
+    background: #cdcdcd;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+    opacity 0.55s ease;
+}
+
+#menutoggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menutoggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#menutoggle input:checked ~ span{
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, 1px);
+    background: #232323;
+
+}
+
+#menutoggle input:checked ~ span:nth-last-child(3){
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menutoggle input:checked ~ span:nth-last-child(2){
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu{
+    position: absolute;
+    width: 400px;
+    margin: -64px 0 0 -50px;
+    padding: 0 10px 30px 50px;
+    padding-top: 100px;
+
+    background: #ededed;
+    list-style-type: none;
+
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li{
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+#menutoggle input:checked ~ ul{
+    transform: none;
+}
+
+
+
+.sticky-image {
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
 }
