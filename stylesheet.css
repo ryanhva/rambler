@@ -268,7 +268,7 @@ p {
 .image_specials {
 
     width: 11em;
-    height: 23.5em;
+    height: 24em;
     padding-left: 1em;
 }
 
@@ -312,6 +312,9 @@ p {
 }
 
 /*contact*/
+#contact{
+    height: 34em;
+}
 #contact p {
     margin-bottom: -10px;
 }
