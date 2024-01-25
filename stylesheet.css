@@ -50,13 +50,15 @@ body {
     color: white;
 }
 
-#about,
+
 #my_thoughts,
 #location,
 #how_to_be_green,
-#clothes {
+#rambler_fundamentals {
     height: 100em;
 }
+
+
 
 #about {
     background-color: red
@@ -133,14 +135,18 @@ body {
     padding-left: 1em;
 }
 /*clothess*/
-#clothes{
+#rambler_fundamentals{
     background-color: purple;
 }
 
+#rambler_fundamentals img{
+    width: 100%;
+    height: 350px;
+}
 #about a,
 #location a,
 #how_to_be_green a,
-#clothes a {
+#rambler_fundamentals a {
     color: white;
     text-decoration: none;
 }
@@ -281,9 +287,25 @@ p {
 }
 
 
-
+/*
 .sticky-image {
     position: fixed;
     bottom: 0px;
     right: 20px;
 }
+*/
+#buttontop {
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+    background-color: black; /* Set your desired background color */
+    border: none;
+    border-radius: 10em;
+    padding: 10px;
+
+
+  }
+  #buttontop a{
+    text-decoration: none;
+    color: white;
+  }
